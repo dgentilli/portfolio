@@ -1,0 +1,350 @@
+// Variables (color, typography)
+@import "scss/vars";
+
+// Google Material customizations
+@import "scss/mdc/mdc";
+
+//react-video import
+@import "video-react/styles/scss/video-react.scss";
+
+//@import "@material/react-top-app-bar/index.scss";
+
+body,
+div,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+li {
+  font-family: $f-stack-default;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#projects-grid a {
+  text-decoration: none;
+}
+
+#featured-projects-grid a {
+  text-decoration: none;
+}
+
+.mdc-button-custom {
+  margin-bottom: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: $c-text;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  p {
+    font-size: $f-size-l;
+    font-weight: 300;
+
+    code {
+      font-family: $f-stack-monospace;
+    }
+  }
+}
+
+.App-link {
+  font-size: $f-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $c-highlight;
+}
+
+main {
+  min-height: calc(
+    100vh - 125px
+  ); /* height of window - (65px header height + footer height + (2*footer padding)) */
+  display: block;
+}
+
+/* CSS for MAIN component  */
+
+.main-page-container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.featured-projects-header {
+  margin-top: 30px;
+}
+
+.humans {
+  color: $c-purple;
+}
+
+.project-tile {
+  border: 1px solid #ccc;
+  height: 450px;
+  padding-right: 35px;
+  background-color: rgb(202, 200, 202);
+}
+
+.thumbnail {
+  object-fit: cover;
+  height: 185px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.project-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.project-tags {
+  color: black;
+  font-size: 0.75em;
+  border: 1px solid #ccc;
+}
+
+.project-summary {
+  color: black;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+/* END CSS for MAIN component */
+
+/* CSS Code for About page */
+
+.about-container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+/* END CSS Code for About page  */
+
+/* CSS Code for the projects overview page */
+
+.projects-overview-container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.projects-page-header {
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+.projects-overview {
+  text-align: center;
+  margin-top: 5px;
+  background-color: rgb(202, 200, 202);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.featured-projects .col {
+  flex: 3;
+  border: 2px gray solid;
+}
+
+.col header {
+  padding-top: 20px;
+}
+
+.col button {
+  margin-top: 5px;
+}
+
+/* END CSS Code for the project overview page */
+
+/* CSS Code for the project show page */
+.project-show-container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.show-project-tags {
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+
+.tech-stack-container {
+  background-color: rgb(202, 200, 202);
+}
+
+.tech-stack-header {
+  font-size: 1.2em;
+}
+
+.tech-stack {
+  list-style-type: none;
+}
+
+.project-show-buttons .mdc-button-custom {
+  margin-right: 5px;
+}
+
+/* END CSS Code for the project show page */
+
+/* CSS Code for the Contact Form */
+
+.contact-form-wrapper {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.form-group {
+  width: 400px;
+}
+
+#contact-form input {
+  width: 300px;
+  height: 20px;
+  margin-top: 5px;
+  border-radius: 5%;
+}
+
+#contact-form textarea {
+  width: 300px;
+  height: 75px;
+  margin-top: 5px;
+  border-radius: 5%;
+}
+
+#contact-form #cf-submit {
+  height: 40px;
+  border-radius: 5%;
+  background-color: rgb(202, 200, 202);
+}
+
+/* END CSS Code for the Contact Form */
+
+/* CSS for Footer   */
+
+footer {
+  /* min-height: 40px; */
+  display: block;
+  background-color: $c-purple;
+  color: $c-white;
+  padding: 10px;
+}
+
+.footer-menu-items {
+  width: 300px;
+  margin: 0px auto;
+}
+
+.footer-media-icons {
+  width: 300px;
+  margin: 0px auto;
+}
+
+.footer-media-icon {
+  height: 35px;
+}
+
+.footer-menu-link {
+  color: $c-white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* END CSS for Footer  */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1100px) {
+  .main-page-container {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-page-container {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-overview-container {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .projects-overview-container {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about-container {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .about-container {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project-show-container {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .project-show-container {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-media-icons {
+    width: 200px;
+    margin: 0px auto;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-media-icons {
+    width: 250px;
+    margin: 0px auto;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form-wrapper {
+    width: 100vw;
+  }
+}

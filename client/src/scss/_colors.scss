@@ -1,0 +1,29 @@
+// =============================================
+// Colors partial
+// =============================================
+
+// BRAND COLORS
+// Usually not used directly in Sass partials
+// used to define context-based color vars in this file
+
+$c-black: #25292c;
+$c-white: #fcfbfa;
+$c-lightgray: #e3e3e1;
+$c-gray: darken($c-lightgray, 25%);
+$c-darkgray: lighten($c-black, 5%);
+
+$c-blue: #00c2de;
+$c-pink: #d5006e;
+$c-orange: #ff3c1f;
+$c-purple: #593080;
+$c-darkpurple: #2d1b45;
+
+// BASE COLORS
+// Used in Sass partials
+$c-theme-primary: $c-purple;
+$c-theme-secondary: $c-pink;
+$c-theme-error: $c-orange;
+
+$c-text: $c-black;
+$c-highlight: $c-theme-primary;
+$c-button: $c-theme-primary;

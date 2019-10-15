@@ -1,0 +1,80 @@
+// =======================================================
+// Google Material Design Components (MDC) Customizations
+// =======================================================
+
+// custom styles for variables defined in MDC 'typography':
+// node_modules/@material/typography/_variables.scss
+
+$mdc-typography-font-family: $f-stack-default;
+
+// custom styles for variables defined in MDC 'theme':
+// node_modules/@material/theme/_variables.scss
+
+$mdc-theme-primary: $c-theme-primary !default; // baseline purple, 500 tone
+$mdc-theme-on-primary: if(
+  mdc-theme-contrast-tone($mdc-theme-primary) == "dark",
+  $c-black,
+  $c-white
+) !default;
+
+$mdc-theme-secondary: $c-theme-secondary !default;
+$mdc-theme-on-secondary: if(
+  mdc-theme-contrast-tone($mdc-theme-secondary) == "dark",
+  $c-black,
+  $c-white
+) !default;
+$mdc-theme-background: $c-white !default; // White
+
+$mdc-theme-surface: #fff !default;
+$mdc-theme-on-surface: if(
+  mdc-theme-contrast-tone($mdc-theme-surface) == "dark",
+  $c-black,
+  $c-white
+) !default;
+
+$mdc-theme-error: $c-theme-error !default;
+$mdc-theme-on-error: if(
+  mdc-theme-contrast-tone($mdc-theme-error) == "dark",
+  $c-black,
+  $c-white
+) !default;
+
+// COMPONENT STYLES
+// ToDo: pull these in only when needed
+
+// Top App Bar
+@import "@material/react-top-app-bar/index.scss";
+@import "scss/mdc/mdc-top-app-bar";
+
+// Drawer
+@import "@material/react-drawer/index.scss";
+
+// List
+@import "@material/react-list/index.scss";
+
+// Button
+@import "@material/react-button/index.scss";
+@import "scss/mdc/mdc-button";
+
+//React Layout Grid
+@import "@material/react-layout-grid/index.scss";
+
+//@import "material/card/mdc-card.css";
+//@import "scss/mdc/mdc-card";
+
+.drawer-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px); /* window height - footer height */
+  overflow: hidden;
+  background-color: $c-white;
+}
+
+.drawer-app-content {
+  flex: auto;
+  overflow: auto;
+}
+
+.mdc-drawer {
+  background-color: $c-black;
+}

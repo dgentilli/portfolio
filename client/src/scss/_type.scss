@@ -1,0 +1,33 @@
+// =============================================
+// Typography
+// =============================================
+
+// Google Web Fonts
+
+$f-google-monospace: unquote("Source+Code+Pro");
+@import url("http://fonts.googleapis.com/css?family=#{$f-google-monospace}");
+
+// Font Stacks
+
+$f-stack-sans: 'Avenir', Verdana, Arial, sans-serif;
+$f-stack-serif: Georgia, Times, 'Times New Roman', serif;
+$f-stack-special: 'Raleway', 'Helvetica Neue', Verdana, Arial, sans-serif;
+$f-stack-monospace: 'Source Code Pro', monospace;
+
+$f-stack-default: $f-stack-sans !default;
+
+// Font Sizes
+
+$f-size-xxl: 30px;
+$f-size-xl: 24px;
+$f-size-l: 18px;
+
+$f-size: 16px;
+
+$f-size-s: 14px;
+$f-size-xs: 12px;
+$f-size-xxs: 10px;
+
+// Base Measures
+$b-line-height: 1.5;
+$b-margin-bottom: 1.5em;

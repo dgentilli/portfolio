@@ -1,0 +1,11 @@
+// =============================================
+// VARIABLES (SCSS partial)
+// 
+// file name is preceded by an underscore to indicate that this is
+// a Sass file that we want to import but don't want to compile to a CSS file
+// 
+// =============================================
+
+// importing partials (Sass looks for file with preceding underscore and *.scss, we don't need to include them)
+@import "scss/colors";
+@import "scss/type";
